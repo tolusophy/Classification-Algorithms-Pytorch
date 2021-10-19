@@ -31,7 +31,7 @@ I tried to implement algorithms used for classification using the pytorch librar
 ![O8ntGzS](https://user-images.githubusercontent.com/45424924/137970247-1d4c673f-ba4f-484e-8515-ca52b46602c6.png)
 
 
-##How to use
+## How to use
 - Edit model section in main.py file 
 - If you are using AlexNet, change transforms.Resize to 227,227
 - You may switch other parameters
