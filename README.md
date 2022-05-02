@@ -32,9 +32,27 @@ I tried to implement algorithms used for classification using the pytorch librar
 
 
 ## How to use
-- Edit model section in main.py file 
-- If you are using AlexNet, change transforms.Resize to 227,227
-- You may switch other parameters
+
+## Requirements:software
+Requirements for [PyTorch](http://pytorch.org/)
+
+## Requirements:hardware
+For most experiments, one or two K40(~11G of memory) gpus is enough cause PyTorch is very memory efficient. However,
+to train DenseNet on cifar(10 or 100), you need at least 4 K40 gpus.
+
+## Usage
+1. Clone this repository
+
+```
+git clone https://github.com/Ti-Oluwanimi/Classification-Algorithms-Pytorch.git
+```
+
+2. Edit main.py and run.sh
+
+In the ```main.py```, you can specify the network you want to train(for example):
+
+```
+model = resnet20_cifar(num_classes=10)
 
 ##Note
 Please contact me if there are issues within the codebase. 
